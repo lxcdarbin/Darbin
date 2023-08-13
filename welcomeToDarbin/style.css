@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.part1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#element{
+    font-size: 2.7vw;
+    visibility: hidden;
+}
+.btn{
+    background-color: transparent;
+    border: 2px solid orange;
+    color: orange;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.8vw;
+  
+    cursor: pointer;
+    transition: all 1s  ;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px orange;
+
+}
+
+img{
+    height: 25vh;
+    animation: anim 3s linear infinite;
+   
+}
+
+@keyframes anim{
+    0%,100% , 50%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(6px);
+    }
+    75%{
+        transform: translateY(-6px);
+    }
+}
